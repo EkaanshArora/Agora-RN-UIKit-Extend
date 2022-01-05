@@ -12,12 +12,10 @@ const App = () => {
         rtcProps: {appId: '<Agora App ID>', channel: 'test'},
         callbacks: {EndCall: () => setCall(false)},
       }}>
-      <View>
-        <RtcConfigure>
-          <GridVideo />
-          <Controls />
-        </RtcConfigure>
-      </View>
+      <RtcConfigure>
+        <GridVideo />
+        <Controls />
+      </RtcConfigure>
     </PropsContext.Provider>
   ) : (
     <View />
